@@ -25,7 +25,7 @@ INSERT INTO animals(name, date_of_birth, escape_attempts, neutered, weight_kg)++
 	VALUES ('Blossom', '1998-10-13', 3, TRUE, 17);
 
 /* Data for third step*/
-
+/*Data for owners table*/
 INSERT INTO owners (full_name, age)
 	VALUES('Sam Smith', 34);
 INSERT INTO owners (full_name, age)
@@ -38,3 +38,8 @@ INSERT INTO owners (full_name, age)
 	VALUES('Dean Winchester', 14);
 INSERT INTO owners (full_name, age)
 	VALUES('Jodie Whittaker', 38);
+/*Data for species table*/
+INSERT INTO species (name)
+	VALUES('Pokemon');
+INSERT INTO species (name)
+	VALUES('Digimon');
