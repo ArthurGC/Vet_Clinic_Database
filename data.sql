@@ -21,7 +21,7 @@ INSERT INTO animals(name, date_of_birth, escape_attempts, neutered, weight_kg)
 	VALUES ('Angemon', '2005-06-12', 1, TRUE, -45);
 INSERT INTO animals(name, date_of_birth, escape_attempts, neutered, weight_kg)
 	VALUES ('Boarmon', '2005-06-7', 7, TRUE, 20.4);
-INSERT INTO animals(name, date_of_birth, escape_attempts, neutered, weight_kg)++
+INSERT INTO animals(name, date_of_birth, escape_attempts, neutered, weight_kg)
 	VALUES ('Blossom', '1998-10-13', 3, TRUE, 17);
 
 /* Data for third step*/
@@ -43,3 +43,14 @@ INSERT INTO species (name)
 	VALUES('Pokemon');
 INSERT INTO species (name)
 	VALUES('Digimon');
+
+/*Modify species_id in animals table*/
+UPDATE animals SET species_id= 'Digimon' WHERE name LIKE '%mon';
+UPDATE animals SET species_id= 'Pokemon' WHERE species_id IS NULL;
+
+/*Modify owner_id in animals table*/
+UPDATE animals SET owner_id = 'Sam Smith' WHERE name = 'Agumon';
+UPDATE animals SET owner_id = 'Jennifer Orwell' WHERE name IN ('Gabumon','Pikachu');
+UPDATE animals SET owner_id = 'Bob' WHERE name IN ('Devimon','Plantmon');
+UPDATE animals SET owner_id = 'Melody Pond' WHERE name IN ('Charmander','Squirtle', 'Blossom');
+UPDATE animals SET owner_id = 'Dean Winchester' WHERE name IN ('Angemon','Boarmon');

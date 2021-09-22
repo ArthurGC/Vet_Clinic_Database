@@ -32,8 +32,6 @@ CREATE TABLE species (
 )
 
 /*Modify animals table*/
-/*Make sure id is autoincremented primary key*/
-
 ALTER TABLE animals 
     DROP COLUMN species;
 ALTER TABLE animals
