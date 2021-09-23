@@ -9,7 +9,7 @@ INSERT INTO animals(name, date_of_birth, escape_attempts, neutered, weight_kg)
 
 INSERT INTO animals(name, date_of_birth, escape_attempts, neutered, weight_kg)
 	VALUES ('Pikachu', '2021-01-7', 1, FALSE, 15.04);
-	
+
 INSERT INTO animals(name, date_of_birth, escape_attempts, neutered, weight_kg)
 	VALUES ('Devimon', '2017-05-12', 5, TRUE, 11);
 
@@ -98,42 +98,52 @@ INSERT INTO specializations (vets_id, species_id)
 	VALUES(4,2);
 
 /*Add visits data*/
+/*Agumon visited William Tatcher on May 24th, 2020.
+Agumon visited Stephanie Mendez on Jul 22th, 2020.*/
 INSERT INTO visits (animals_id, vets_id, date_of_visit)
 	VALUES(1,1,'2020-05-24');
 INSERT INTO visits (animals_id, vets_id, date_of_visit)
 	VALUES(1,3,'2020-07-22');
-	
+/*Gabumon visited Jack Harkness on Feb 2nd, 2021.*/
 INSERT INTO visits (animals_id, vets_id, date_of_visit)
 	VALUES(2,4,'2021-02-2');
-
+/*Pikachu visited Maisy Smith on Jan 5th, 2020.
+Pikachu visited Maisy Smith on Mar 8th, 2020.
+Pikachu visited Maisy Smith on May 14th, 2020.*/
 INSERT INTO visits (animals_id, vets_id, date_of_visit)
 	VALUES(3,2,'2020-01-5');
 INSERT INTO visits (animals_id, vets_id, date_of_visit)
 	VALUES(3,2,'2020-03-8');
 INSERT INTO visits (animals_id, vets_id, date_of_visit)
 	VALUES(3,2,'2020-05-14');
-	
+/*Devimon visited Stephanie Mendez on May 4th, 2021.*/
 INSERT INTO visits (animals_id, vets_id, date_of_visit)
 	VALUES(4,3,'2021-05-4');
-	
+/*Charmander visited Jack Harkness on Feb 24th, 2021.*/	
 INSERT INTO visits (animals_id, vets_id, date_of_visit)
 	VALUES(5,4,'2021-02-24');
-	
+/*Plantmon visited Maisy Smith on Dec 21st, 2019.
+Plantmon visited William Tatcher on Aug 10th, 2020.
+Plantmon visited Maisy Smith on Apr 7th, 2021.*/	
 INSERT INTO visits (animals_id, vets_id, date_of_visit)
 	VALUES(6,2,'2019-12-21');
 INSERT INTO visits (animals_id, vets_id, date_of_visit)
 	VALUES(6,1,'2020-08-10');
 INSERT INTO visits (animals_id, vets_id, date_of_visit)
 	VALUES(6,2,'2021-04-7');
-	
+/*Squirtle visited Stephanie Mendez on Sep 29th, 2019.*/	
 INSERT INTO visits (animals_id, vets_id, date_of_visit)
 	VALUES(7,3,'2019-09-29');
-	
+/*Angemon visited Jack Harkness on Oct 3rd, 2020.
+Angemon visited Jack Harkness on Nov 4th, 2020.*/	
 INSERT INTO visits (animals_id, vets_id, date_of_visit)
 	VALUES(8,4,'2020-10-3');
 INSERT INTO visits (animals_id, vets_id, date_of_visit)
 	VALUES(8,4,'2020-11-4');
-
+/*Boarmon visited Maisy Smith on Jan 24th, 2019.
+Boarmon visited Maisy Smith on May 15th, 2019.
+Boarmon visited Maisy Smith on Feb 27th, 2020.
+Boarmon visited Maisy Smith on Aug 3rd, 2020.*/
 INSERT INTO visits (animals_id, vets_id, date_of_visit)
 	VALUES(9,2,'2019-01-24');
 INSERT INTO visits (animals_id, vets_id, date_of_visit)
@@ -142,7 +152,8 @@ INSERT INTO visits (animals_id, vets_id, date_of_visit)
 	VALUES(9,2,'2020-02-27');
 INSERT INTO visits (animals_id, vets_id, date_of_visit)
 	VALUES(9,2,'2020-08-3');
-	
+/*Blossom visited Stephanie Mendez on May 24th, 2020.
+Blossom visited William Tatcher on Jan 11th, 2021.*/	
 INSERT INTO visits (animals_id, vets_id, date_of_visit)
 	VALUES(10,3,'2020-05-24');
 INSERT INTO visits (animals_id, vets_id, date_of_visit)
