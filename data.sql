@@ -45,12 +45,13 @@ INSERT INTO species (name)
 	VALUES('Digimon');
 
 /*Modify species_id in animals table*/
-UPDATE animals SET species_id= 'Digimon' WHERE name LIKE '%mon';
-UPDATE animals SET species_id= 'Pokemon' WHERE species_id IS NULL;
+UPDATE animals SET species_id= '2' WHERE name LIKE '%mon';
+UPDATE animals SET species_id= '1' WHERE species_id IS NULL;
 
 /*Modify owner_id in animals table*/
-UPDATE animals SET owner_id = 'Sam Smith' WHERE name = 'Agumon';
-UPDATE animals SET owner_id = 'Jennifer Orwell' WHERE name IN ('Gabumon','Pikachu');
-UPDATE animals SET owner_id = 'Bob' WHERE name IN ('Devimon','Plantmon');
-UPDATE animals SET owner_id = 'Melody Pond' WHERE name IN ('Charmander','Squirtle', 'Blossom');
-UPDATE animals SET owner_id = 'Dean Winchester' WHERE name IN ('Angemon','Boarmon');
+UPDATE animals SET owner_id = owners.id FROM owners WHERE name = 'Agumon' AND owners.full_name= 'Sam Smith' ;
+UPDATE animals SET owner_id = owners.id FROM owners WHERE name IN ('Gabumon','Pikachu') AND owners.full_name= 'Jennifer Orwell';
+UPDATE animals SET owner_id = owners.id FROM owners WHERE name IN ('Devimon','Plantmon') AND owners.full_name= 'Bob';
+UPDATE animals SET owner_id = owners.id FROM owners WHERE name IN ('Charmander','Squirtle', 'Blossom') AND owners.full_name= 'Melody Pond';
+UPDATE animals SET owner_id = owners.id FROM owners WHERE name IN ('Angemon','Boarmon') AND owners.full_name= 'Dean Winchester';
+
