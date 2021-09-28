@@ -79,3 +79,16 @@ CREATE TABLE visits (
 	FOREIGN KEY (animals_id) REFERENCES animals (id) ON DELETE CASCADE,
 	PRIMARY KEY (vets_id, animals_id, date_of_visit)
 );
+
+/*Week 2*/
+/*Day 1*/
+
+/*Add an email column to owners table*/
+ALTER TABLE owners ADD COLUMN email VARCHAR(120);
+
+/*Create indexes to improve execution time*/
+CREATE INDEX visits_animal_id_asc ON visits(animal_id ASC);
+
+CREATE INDEX visits_vet_id_asc ON visits(vet_id ASC);
+
+CREATE INDEX owners_email_asc ON owners(email ASC);

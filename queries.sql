@@ -85,3 +85,13 @@ SELECT vets.name, species.name, COUNT(visits.date_of_visit) AS total_visits FROM
 SELECT COUNT(visits.animals_id), species.name, vets.name FROM visits INNER JOIN animals ON visits.animals_id = animals.id
     INNER JOIN species ON species.id = animals.species_id
     INNER JOIN vets ON vets.id = visits.vets_id WHERE vets.name = 'Maisy Smith' GROUP BY species.name, vets.name 
+
+
+/*Week 2*/
+/*Day 1*/
+
+SELECT COUNT(*) FROM visits where animal_id = 4;
+
+SELECT * FROM visits where vet_id = 2;
+
+SELECT * FROM owners where email = 'owner_18327@mail.com';
